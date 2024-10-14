@@ -10,7 +10,7 @@ pipeline {
       }
       stage('List') {
         steps{      
-          bat("dir ${JENKINS_HOME}")
+          sh("dir ${JENKINS_HOME}")
         }
 
 
