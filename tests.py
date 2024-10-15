@@ -9,7 +9,7 @@ DATABASE = 'AdventureWorks2012'
 USERNAME = 'Adventure_Login'
 PASSWORD = 'Poly01*'
 
-connectionString = f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={SERVER};DATABASE={DATABASE};UID={USERNAME};PWD={PASSWORD}'
+connectionString = f'SERVER={SERVER};DATABASE={DATABASE};UID={USERNAME};PWD={PASSWORD}'
 conn = pyodbc.connect(connectionString)
 
 
