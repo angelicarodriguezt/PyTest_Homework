@@ -9,7 +9,7 @@ DATABASE = 'AdventureWorks2012'
 USERNAME = 'Adventure_Login'
 PASSWORD = 'Poly01*'
 
-conn = pymssql.connect(host=r'localhost', user=r'Adventure_Login', password=r'Poly01*', database=r'AdventureWorks2012')
+conn = pymssql.connect(host=r'127.0.0.1', user=r'Adventure_Login', password=r'Poly01*', database=r'AdventureWorks2012')
 
 
 
