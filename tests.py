@@ -1,7 +1,7 @@
 """
-Connects to a SQL database using pyodbc
+Connects to a SQL database using pymssql
 """
-import pyodbc
+import pymssql
 
 
 SERVER = 'LAPTOP-EFO3HTGH'
@@ -9,8 +9,7 @@ DATABASE = 'AdventureWorks2012'
 USERNAME = 'Adventure_Login'
 PASSWORD = 'Poly01*'
 
-connectionString = f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={SERVER};DATABASE={DATABASE};UID={USERNAME};PWD={PASSWORD}'
-conn = pyodbc.connect(connectionString)
+conn = pymssql.connect(host=r'LAPTOP-EFO3HTGH', user=r'Adventure_Login', password=r'Poly01*', database=r'AdventureWorks2012')
 
 
 
