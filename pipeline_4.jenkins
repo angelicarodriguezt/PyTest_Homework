@@ -8,7 +8,7 @@ pipeline {
           sh 'apt-get -y install python3.11-venv'
           sh 'python3 -m venv env'
           sh 'source env/bin/activate'
-          sh 'apt-get -y install python3-pymysql'
+          sh 'apt-get -y install python3-pymssql'
           sh 'env/bin/pip install -r requirements.txt'
         }
         }
