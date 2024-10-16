@@ -1,7 +1,7 @@
 """
 Connects to a SQL database using pymssql
 """
-import pymssql
+import pyodbc
 
 
 SERVER = 'LAPTOP-EFO3HTGH'
@@ -9,13 +9,8 @@ DATABASE = 'AdventureWorks2012'
 USERNAME = 'Adventure_Login'
 PASSWORD = 'Poly01*'
 
-conn = pymssql.connect(
-    server='127.0.0.1',
-    user='Adventure_Login',
-    password='Poly01*',
-    database='AdventureWorks2012'
-)
-
+connectionString = f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={SERVER};DATABASE={DATABASE};UID={USERNAME};PWD={PASSWORD}'
+conn = pyodbc.connect(connectionString)
 
 
 def test_table_address_duplicate():
