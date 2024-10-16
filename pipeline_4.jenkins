@@ -9,6 +9,7 @@ pipeline {
           sh 'python3 -m venv env'
           sh 'apt-get -y install python3-pymssql'
           sh 'apt-get -y install python3-pytest'
+          sh 'apt-get -y  install unixodbc-dev'
           sh 'env/bin/pip install -r requirements.txt'
         }
         }
